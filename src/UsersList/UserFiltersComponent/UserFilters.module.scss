@@ -1,5 +1,5 @@
 input {
-	width: 100%;
+	width: 280px;
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid #ccc;
@@ -7,11 +7,12 @@ input {
 }
 
 select {
-	width: 100%;
+	width: 300px;
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid #ccc;
 	margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .controls {
