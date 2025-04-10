@@ -1,0 +1,17 @@
+@use '../variables.scss' as *;
+
+.card {
+	background-color: $light-background-color;
+	color: $light-color;
+	border-radius: $border-radius;
+	padding: $padding;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-out;
+	width: 300px;
+
+	&:hover {
+		box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+		transform: scale(1.05);
+		cursor: pointer;
+	}
+}

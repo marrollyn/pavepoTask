@@ -1,0 +1,49 @@
+@use './variables' as *;
+
+body {
+	font-family: $font-stack;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: $light-background-color;
+	color: $light-color;
+	text-align: center;
+}
+
+a {
+	color: $light-color;
+	text-decoration: inherit;
+
+	&:hover {
+		color: $light-link-hover-color;
+	}
+}
+
+button {
+	border-radius: $border-radius;
+	border: 1px solid $border-color;
+	padding: $padding;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: $light-button-background;
+	cursor: $cursor;
+	transition: $transition;
+
+	&:hover {
+		border-color: $light-link-hover-color;
+	}
+
+	&:focus,
+	&:focus-visible {
+		outline: $outline;
+	}
+}
+
+li {
+	list-style: none;
+}
