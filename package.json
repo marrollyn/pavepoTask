@@ -2,13 +2,16 @@
 	"name": "package.json",
 	"private": true,
 	"version": "0.0.0",
+	"homepage": "https://marrollyn.github.io/pavepoTask/",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"format": "prettier --write .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "cross-env VITE_DEPLOY_TARGET=github gh-pages -d dist"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.6.1",
@@ -27,12 +30,14 @@
 		"@typescript-eslint/eslint-plugin": "^8.29.1",
 		"@typescript-eslint/parser": "^8.29.1",
 		"@vitejs/plugin-react": "^4.3.4",
+		"cross-env": "^7.0.3",
 		"eslint": "^9.24.0",
 		"eslint-config-prettier": "^10.1.1",
 		"eslint-plugin-prettier": "^5.2.6",
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^5.2.0",
 		"eslint-plugin-react-refresh": "^0.4.19",
+		"gh-pages": "^6.3.0",
 		"globals": "^15.15.0",
 		"prettier": "^3.5.3",
 		"sass-embedded": "^1.86.3",
